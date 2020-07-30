@@ -1,0 +1,14 @@
+{
+  "title": "The fallback method parameter at @HystrixCommand must be declared and defined with same name.",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "10min"
+  },
+  "tags": [
+    "spring",
+    "security"
+  ],
+  "defaultSeverity": "Minor"
+}

@@ -1,0 +1,21 @@
+<p>The fallback method parameter at @HystrixCommand must be declared and defined with same name.</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+	@HystrixCommand(fallbackMethod="")
+	public String callStudentServiceAndGetData(String schoolname) {
+	}
+	
+	public String callStudentServiceAndGetData_Fallback(String schoolname) {
+	}
+	
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+	@HystrixCommand(fallbackMethod="callStudentServiceAndGetData_Fallback") 
+	public String callStudentServiceAndGetData(String schoolname) {
+	}
+	
+	public String callStudentServiceAndGetData_Fallback(String schoolname) {
+	}
+	
+</pre>

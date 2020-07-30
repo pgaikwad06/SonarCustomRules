@@ -1,0 +1,11 @@
+<p>Idenifier type declaration for the variable must be correct type ImmutableMap</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+
+	Map<String, String> immutableMap =  ImmutableMap.of("United States", "Washington D.C."); //// Noncompliant {{Invalid identifier type declaration}}
+	
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+	ImmutableMap<String, String> immutableMap =  ImmutableMap.of("United States", "Washington D.C.");
+</pre>

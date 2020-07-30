@@ -1,0 +1,16 @@
+<p>Method should not have more than 4 parameters</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+public void methodTest(int param1, int param2, int param3, int param4, int param5) { // Noncompliant {{Too Many Parameters}}
+
+		System.out.println(param1+param2+param3+param4+param5);
+		
+	}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+public void methodTest(int param1, int param2, int param3, int param4) {
+
+		System.out.println(param1+param2+param3+param4);
+	}
+</pre>

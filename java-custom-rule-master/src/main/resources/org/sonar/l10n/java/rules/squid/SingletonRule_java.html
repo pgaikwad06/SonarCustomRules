@@ -1,0 +1,36 @@
+<p>Singleton getinstance method block must be synchronized</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+
+	    public static Singleton getInstance(int pp) {
+        if (instance == null) {
+                                              // Noncompliant {{Synchronize the getinstance method}}
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            
+        }
+
+        return instance;
+    }
+
+	
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+	     public static Singleton getInstance(int pp) {
+        if (instance == null) {
+            synchronized(Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
+        }
+
+        return instance;
+    }
+
+	
+	
+</pre>
+

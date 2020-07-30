@@ -1,0 +1,13 @@
+{
+  "title": "Synchronized block must be added to achieved Thread safety in the Singleton.",
+  "type": "VULNERABILITY",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "10min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "Minor"
+}

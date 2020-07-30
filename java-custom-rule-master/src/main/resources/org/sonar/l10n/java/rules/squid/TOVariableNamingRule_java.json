@@ -1,0 +1,13 @@
+{
+  "title": "Cannot have Transfer Object variable naming convention for premitive dtatypes.",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "Minor"
+}
